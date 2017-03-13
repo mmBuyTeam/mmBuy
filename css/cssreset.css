@@ -1,0 +1,42 @@
+@charset "UTF-8";
+body{
+	font: normal 12px "微软雅黑";
+}
+html {
+	color:#000; background-color: #FFF;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,form,fieldset,input,textarea,p,th,td,button,img{
+	padding: 0;margin: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+em,strong,th,var {
+	font-size: normal;
+	font-weight: normal;
+}
+ol,ul {
+	list-style: none;
+}
+h1,h2,h3 {
+	font-size: 100%;
+	font-weight: normal;
+}
+input,textarea,select
+ {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	*font-size: 100%;
+}
+a { 
+text-decoration:none; 
+color:#000;
+} 
+img {
+	border:none;
+}
+input {
+	border:0 none;
+}
