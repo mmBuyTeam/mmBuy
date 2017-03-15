@@ -1,11 +1,28 @@
 @charset "UTF-8";
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+
+    /*在移动端特殊的设置*/
+    /*清除点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+    /*设置所有的盒子的宽度以边框开始计算*/
+    -webkit-box-sizing: border-box;
+    /*要兼容 webkit 浏览器内核厂商 这种情况一般是老的移动端浏览器*/
+    box-sizing: border-box;
+}
 body{
-	font: normal 12px "微软雅黑";
+	color:#000;
+	font-family:arial;
+	background:#FFF;
+	overflow-x:hidden;
 }
 html {
 	color:#000; background-color: #FFF;
 }
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,form,fieldset,input,textarea,p,th,td,button,img{
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,form,fieldset,input,textarea,p,th,td,button,img{
 	padding: 0;margin: 0;
 }
 table {
@@ -39,4 +56,7 @@ img {
 }
 input {
 	border:0 none;
+}
+input, select, form images, button {
+	vertical-align:middle;
 }

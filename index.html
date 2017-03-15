@@ -2,14 +2,113 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<title>慢慢买比价网--手机版</title>
+	<link rel="shortcut icon" href="favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="css/cssreset.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="js/vue.js"></script>
+	<script type="text/javascript" src="node_modules/vue-resource/dist/vue-resource.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
+<!-- S=头部 -->
 
+	<header class="mainColor clearfix">
+		<div class="fl logo">
+			<a href="http://m.manmanbuy.com/">
+				<img src="images/header_logo.png">
+			</a>
+		</div>
+		<div class="fr appdown">
+			<a href="http://m.manmanbuy.com/?o=download">
+				<img src="images/header_app.png">
+			</a>
+		</div>
+	</header>
+
+<!-- E=头部 -->
+
+<!-- S=搜索 -->
+	<form class="search">
+		<input class="search_box" type="search" placeholder="请输入你想比价的商品">
+		<input class="search_btn mainColor" type="submit" value="搜索">
+	</form>
+
+<!-- E=搜索 -->
+
+<!-- S=导航 -->
+	<nav >
+		<ul id="nav">
+			<li v-for="item in navDat
+				{{navData.name}}
+				<a href=""><img src="images/ic_search.png"></a>
+				<span>比价搜索</span>
+			</li>
+		</ul>
+	</nav>
+
+<!-- E=导航 -->
+
+<!-- S=商品 -->
+<div class="goods">
+	<h3 class="clearfix">
+		<span>超值折扣推荐</span>
+		<img class="fr" src="images/more.png">
+	</h3>
+	<ul>
+		<li class="goods_list clearfix">
+			<div class="list_l fl">
+				<a href="">
+					<img src="images/demo.png">
+				</a>
+			</div>
+			<div class="list_r">
+				<h3>2017智慧网购专题: 直击315 <span>13点更新: 消费维权成本高</span></h3>
+				<div class="list_info clearfix">
+					<span class="fl">慢慢买 | 03-15 13:03 </span>
+					<span class="fr">
+						<i></i>83
+					</span> 
+				</div>
+			</div>
+		</li>
+	</ul>
+	<div class="goods_more">
+		<a href="">更多优惠信息 »</a>
+	</div>
+	<h3 class="clearfix">
+		<span>品牌排行</span>
+		<img class="fr" src="images/more.png">
+	</h3>
+</div>
+
+<!-- E=商品 -->
+
+<!-- S=底部 -->
+<footer>
+	<div class="foot_top clearfix">
+		<a href="#">登录</a>
+		<a href="#">注册</a>
+		<a href="#">
+			<img src="images/top.jpg">
+		返回顶部</a>
+	</div>
+	<div class="foot_info">
+		<p>
+			<a href="http://m.manmanbuy.com/?o=download" style="color: Red;">手机APP下载</a>
+			<a href="http://m.manmanbuy.com" style="color: #5a5a5a">
+                    慢慢买手机版</a>
+            -- 掌上比价平台
+		</p>
+		<p>
+            m.manmanbuy.com  
+		</p>
+	</div>
+</footer>
+
+<!-- E=底部 -->
 </body>
-<script type="text/javascript" ></script>
-<script type="text/javascript">
-	
-</script>
 </html>

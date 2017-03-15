@@ -1,0 +1,20 @@
+.mainColor{
+	background-color: #ff841d;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix:after {
+	content: ".";
+	display:block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	zoom:1;
+}
